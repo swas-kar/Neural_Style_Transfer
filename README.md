@@ -3,7 +3,7 @@
 ![Neural Style Transfer -](https://media.licdn.com/dms/image/C4E12AQEfjA-SVxYLVQ/article-cover_image-shrink_600_2000/0/1531630356496?e=2147483647&v=beta&t=kmO2CHjqruhnAASb4Ejpu5-GKwe-7L7HjYbwZD2N4oY) 
 **Created By**: [Swastika Kar](https://github.com/swas-kar) & [Siddharth Sen](https://github.com/Sidhupaji-2004)
 
-## [Try the web app on this link](https://style-transfer-v01.streamlit.app/)
+## Try the web app on this link[https://style-transfer-v01.streamlit.app/](https://style-transfer-v01.streamlit.app/)
 
 ## Table of Contents
 
