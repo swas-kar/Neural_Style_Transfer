@@ -27,10 +27,10 @@ Here are a few examples of the style transfer in action:
 
 ### Examples
 
-![Example1](data/examples/example1.jpg)
-![Example2](data/examples/example2.jpg)
-![Example3](data/examples/example4.jpg)
-![Example3](data/examples/example.jpg)
+![Example1](/data/examples/example1.jpeg)
+![Example2](/data/examples/example2.jpeg)
+![Example3](/data/examples/example4.jpeg)
+![Example3](/data/examples/example.jpeg)
 
 ## Features
 
