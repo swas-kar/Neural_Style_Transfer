@@ -1,9 +1,9 @@
-# Neural Style Transfer using pytorch (GPU version)
+# Neural Style Transfer using PyTorch (GPU version)
 
-![Neural Style Transfer -](https://media.licdn.com/dms/image/C4E12AQEfjA-SVxYLVQ/article-cover_image-shrink_600_2000/0/1531630356496?e=2147483647&v=beta&t=kmO2CHjqruhnAASb4Ejpu5-GKwe-7L7HjYbwZD2N4oY) 
+![Neural Style Transfer](https://media.licdn.com/dms/image/C4E12AQEfjA-SVxYLVQ/article-cover_image-shrink_600_2000/0/1531630356496?e=2147483647&v=beta&t=kmO2CHjqruhnAASb4Ejpu5-GKwe-7L7HjYbwZD2N4oY) 
 **Created By**: [Swastika Kar](https://github.com/swas-kar) & [Siddharth Sen](https://github.com/Sidhupaji-2004)
 
-## Try the web app on this link[https://style-transfer-v01.streamlit.app/](https://style-transfer-v01.streamlit.app/)
+## Try the web app on this link [https://style-transfer-v01.streamlit.app/](https://style-transfer-v01.streamlit.app/)
 
 ## Table of Contents
 
@@ -14,17 +14,23 @@
 - [License](#license)
 
 ## Introduction
-This project is based on the [Neural-Style
-algorithm](https://arxiv.org/abs/1508.06576) developed by Leon A. Gatys,
-Alexander S. Ecker and Matthias Bethge. Neural-Style, or
-Neural-Transfer, allows you to take an image and reproduce it with a new
-artistic style. The algorithm takes three images, an input image, a
-content-image, and a style-image, and changes the input to resemble the
-content of the content-image and the artistic style of the style-image.
+This project is based on the [Neural-Style algorithm](https://arxiv.org/abs/1508.06576) developed by Leon A. Gatys,
+Alexander S. Ecker and Matthias Bethge. Neural-Style, or Neural-Transfer, allows you to take an image and reproduce it with a new artistic style. The algorithm takes three images, an input image, a content-image, and a style-image, and changes the input to resemble the content of the content-image and the artistic style of the style-image.
 
-![](https://miro.medium.com/v2/resize:fit:1400/1*8bbp3loQjkLXaIm_QBfD8w.jpeg)
+![Example1](https://miro.medium.com/v2/resize:fit:1400/1*8bbp3loQjkLXaIm_QBfD8w.jpeg)
 
-We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) for understanding the underlying principles .
+We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) for understanding the underlying principles.
+
+## Example Screenshots
+
+Here are a few examples of the style transfer in action:
+
+### Examples
+
+![Example1](data/examples/example1.jpg)
+![Example2](data/examples/example2.jpg)
+![Example3](data/examples/example4.jpg)
+![Example3](data/examples/example.jpg)
 
 ## Features
 
@@ -62,8 +68,6 @@ We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](h
     ```bash
     pip install -r requirements.txt
     ```
-
-
 
 ### Arguments
 
