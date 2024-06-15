@@ -18,7 +18,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 st.title("_Neural_ _:blue[Style]_ _Transfer_ ")
 
 # Desired size of the output image
-imsize = 512 if torch.cuda.is_available() else 128  # Use small size if no GPU
+imsize = 512 if torch.cuda.is_available() else 256  # Increased size for better quality
 
 # Transformation to resize and convert images to tensors
 loader = transforms.Compose([
@@ -127,18 +127,17 @@ def get_style_model_and_losses(cnn, normalization_mean, normalization_std,
     return model, style_losses, content_losses
 
 def get_input_optimizer(input_img):
-    optimizer = optim.LBFGS([input_img])
+    optimizer = optim.LBFGS([input_img.requires_grad_()])
     return optimizer
 
 def run_style_transfer(cnn, normalization_mean, normalization_std,
-                       content_img, style_img, input_img, num_steps=300,
-                       style_weight=1000000, content_weight=1):
+                       content_img, style_img, input_img, num_steps=500,  # Increased steps
+                       style_weight=1000000, content_weight=10):  # Adjusted weights
     model, style_losses, content_losses = get_style_model_and_losses(cnn,
         normalization_mean, normalization_std, style_img, content_img)
 
     input_img.requires_grad_(True)
-    model.eval()
-    model.requires_grad_(False)
+    model.requires_grad_(True)
     optimizer = get_input_optimizer(input_img)
 
     run = [0]
@@ -218,8 +217,7 @@ if predict:
                                     torch.tensor([0.229, 0.224, 0.225]).to(device),
                                     content_image_file, style_image_file, input_img)
         final_image = imshow(output)
-        st.image(final_image, caption='Output Image', width=300)
+        st.image(final_image, caption='Output Image', width=400)
 
 st.write('Made by Siddharth and Swastika with \u2764\ufe0f.')
 st.write('Happy Coding !')
-
