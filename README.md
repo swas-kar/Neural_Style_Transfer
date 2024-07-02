@@ -39,16 +39,16 @@ We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](h
 
 ### Examples
 Here are a few examples of the style transfer in action:
-1. Tensorflow version 
-![Example1](/data/examples/example1.jpeg)
-![Example2](/data/examples/example2.jpeg)
-![Example3](/data/examples/example4.jpeg)
-![Example3](/data/examples/example.jpeg)
+### TensorFlow Version
+<img src="/data/examples/example1.jpeg" alt="Example1" width="300" height="300"/>
+<img src="/data/examples/example2.jpeg" alt="Example2" width="300" height="300"/>
+<img src="/data/examples/example4.jpeg" alt="Example3" width="300" height="300"/>
+<img src="/data/examples/example.jpeg" alt="Example3" width="300" height="300"/>
 
-2. Pytorch Version 
-![Example5](/data/examples/Robot.jpeg)
-![Example6](/data/examples/Bridge.jpeg)
-![Example7](/data/examples/TajMahal.jpeg)
+### PyTorch Version
+<img src="/data/examples/Robot.png" alt="Example5" width="300" height="300"/>
+<img src="/data/examples/Bridge.jpeg" alt="Example6" width="300" height="300"/>
+<img src="/data/examples/TajMahal.jpeg" alt="Example7" width="300" height="300"/>
 
 ## Features
 
