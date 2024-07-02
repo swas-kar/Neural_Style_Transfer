@@ -3,14 +3,12 @@
 ![Neural Style Transfer](https://media.licdn.com/dms/image/C4E12AQEfjA-SVxYLVQ/article-cover_image-shrink_600_2000/0/1531630356496?e=2147483647&v=beta&t=kmO2CHjqruhnAASb4Ejpu5-GKwe-7L7HjYbwZD2N4oY) 
 **Created By**: [Swastika Kar](https://github.com/swas-kar) & [Siddharth Sen](https://github.com/Sidhupaji-2004)
 
-## Try the web app on this link [https://nst-v02.streamlit.app/](https://nst-v02.streamlit.app/)
+## Try the web app on this link [https://style-transfer-v01.streamlit.app/](https://style-transfer-v01.streamlit.app/)
 
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Important](#important)
-- [Examples](#examples)
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [License](#license)
@@ -23,38 +21,16 @@ Alexander S. Ecker and Matthias Bethge. Neural-Style, or Neural-Transfer, allows
 
 We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) for understanding the underlying principles.
 
-## Features
+## Example Screenshots
 
-- Apply the style of famous artworks to your photos.
-- Adjustable style strength.
-- Supports multiple image formats.
-- Easy to use command-line interface.
-
-## Important :
-1. The notebook demonstrates the PyTorch version utilizing the CUDA GPU available on Google Colab for executing the neural style transfer.
-2. However, the app version runs on TensorFlow as the loading time without GPU support was not practical for user purposes, which required patience for up to 30 minutes of loading.
-3. For completeness and project fulfillment, we have also uploaded the PyTorch version of app.py in the branch called `pytorch`.
-4. We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) for understanding the underlying principles.
-
+Here are a few examples of the style transfer in action:
 
 ### Examples
-Here are a few examples of the style transfer in action:
-### TensorFlow Version
-<div style="display: flex; flex-wrap: wrap;">
-    <img src="/data/examples/example1.jpeg" alt="Example1" width="450" height="450" style="margin: 5px;"/>
-    <img src="/data/examples/example2.jpeg" alt="Example2" width="450" height="450" style="margin: 5px;"/>
-    <img src="/data/examples/example4.jpeg" alt="Example3" width="450" height="450" style="margin: 5px;"/>
-    <img src="/data/examples/example.jpeg" alt="Example4" width="450" height="450" style="margin: 5px;"/>
-</div>
 
-### PyTorch Version
-<img src="/data/examples/Robot.png" alt="Example5" width="900" height="500"/>
-<div style="display: flex; flex-wrap: wrap;">
-    <img src="/data/examples/Bridge.jpeg" alt="Example6" width="450" height="450" style="margin: 5px;"/>
-    <img src="/data/examples/TajMahal.jpeg" alt="Example7" width="450" height="450" style="margin: 5px;"/>
-</div>
-
-
+![Example1](/data/examples/example1.jpeg)
+![Example2](/data/examples/example2.jpeg)
+![Example3](/data/examples/example4.jpeg)
+![Example3](/data/examples/example.jpeg)
 
 ## Features
 
@@ -115,4 +91,3 @@ We welcome contributions! If you find a bug or want to add a new feature, feel f
 ## License
 
 This project is licensed under the MIT License - see the [MIT LICENSE](LICENSE) file for details.
-
