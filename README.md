@@ -40,15 +40,21 @@ We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](h
 ### Examples
 Here are a few examples of the style transfer in action:
 ### TensorFlow Version
-<img src="/data/examples/example1.jpeg" alt="Example1" width="300" height="300"/>
-<img src="/data/examples/example2.jpeg" alt="Example2" width="300" height="300"/>
-<img src="/data/examples/example4.jpeg" alt="Example3" width="300" height="300"/>
-<img src="/data/examples/example.jpeg" alt="Example3" width="300" height="300"/>
+<div style="display: flex; flex-wrap: wrap;">
+    <img src="/data/examples/example1.jpeg" alt="Example1" width="300" height="300" style="margin: 5px;"/>
+    <img src="/data/examples/example2.jpeg" alt="Example2" width="300" height="300" style="margin: 5px;"/>
+    <img src="/data/examples/example4.jpeg" alt="Example3" width="300" height="300" style="margin: 5px;"/>
+    <img src="/data/examples/example.jpeg" alt="Example4" width="300" height="300" style="margin: 5px;"/>
+</div>
 
 ### PyTorch Version
 <img src="/data/examples/Robot.png" alt="Example5" width="300" height="300"/>
-<img src="/data/examples/Bridge.jpeg" alt="Example6" width="300" height="300"/>
-<img src="/data/examples/TajMahal.jpeg" alt="Example7" width="300" height="300"/>
+<div style="display: flex; flex-wrap: wrap;">
+    <img src="/data/examples/Bridge.jpeg" alt="Example6" width="300" height="300" style="margin: 5px;"/>
+    <img src="/data/examples/TajMahal.jpeg" alt="Example7" width="300" height="300" style="margin: 5px;"/>
+</div>
+
+
 
 ## Features
 
