@@ -46,6 +46,9 @@ Here are a few examples of the style transfer in action:
 ![Example3](/data/examples/example.jpeg)
 
 2. Pytorch Version 
+![Example5](/data/examples/Robot.jpeg)
+![Example6](/data/examples/Bridge.jpeg)
+![Example7](/data/examples/TajMahal.jpeg)
 
 ## Features
 
