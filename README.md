@@ -9,6 +9,8 @@
 
 - [Introduction](#introduction)
 - [Features](#features)
+- [Important](#important)
+- [Examples](#examples)
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [License](#license)
@@ -21,16 +23,29 @@ Alexander S. Ecker and Matthias Bethge. Neural-Style, or Neural-Transfer, allows
 
 We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) for understanding the underlying principles.
 
-## Example Screenshots
+## Features
 
-Here are a few examples of the style transfer in action:
+- Apply the style of famous artworks to your photos.
+- Adjustable style strength.
+- Supports multiple image formats.
+- Easy to use command-line interface.
+
+## Important :
+1. The notebook demonstrates the PyTorch version utilizing the CUDA GPU available on Google Colab for executing the neural style transfer.
+2. However, the app version runs on TensorFlow as the loading time without GPU support was not practical for user purposes, which required patience for up to 30 minutes of loading.
+3. For completeness and project fulfillment, we have also uploaded the PyTorch version of app.py in the branch called `pytorch`.
+4. We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) for understanding the underlying principles.
+
 
 ### Examples
-
+Here are a few examples of the style transfer in action:
+1. Tensorflow version 
 ![Example1](/data/examples/example1.jpeg)
 ![Example2](/data/examples/example2.jpeg)
 ![Example3](/data/examples/example4.jpeg)
 ![Example3](/data/examples/example.jpeg)
+
+2. Pytorch Version 
 
 ## Features
 
