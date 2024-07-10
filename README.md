@@ -85,6 +85,24 @@ Here are a few examples of the style transfer in action:
     <img src="/data/examples/TajMahal.jpeg" alt="Example7" width="400" height="400" style="margin: 5px;"/>
 </div>
 
+## More Example Images 
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+    <img src="https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/268754c0-a78d-4629-8aba-a956b5e1ce65" alt="Pytorch Example 1" width="200"/>
+    <img src="https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/00df3d74-1276-4d32-b9b5-70d8dc73f885" alt="Pytorch Example 2" width="200"/>
+    <img src="https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/cdfb42fc-553c-4792-8a45-c6f41d15b4e1" alt="Pytorch Example 3" width="200"/>
+    <img src="https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/b4f3faf2-a2eb-4e48-9554-906b1e11fa12" alt="Pytorch Example 4" width="200"/>
+    <img src="https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/7dc72c24-570c-4612-ba14-942ddac1380f" alt="Pytorch Example 5" width="200"/>
+    <img src="https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/8777bebc-c209-4d3b-acca-358e52db0f6c" alt="Pytorch Example 6" width="200"/>
+    <img src="https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/07381ebf-6ab9-42c6-981f-2a6540dbc2c5" alt="Pytorch Example 7" width="200"/>
+    <img src="https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/9e067094-3c0a-4a10-b9b2-22a5ef750381" alt="Pytorch Example 8" width="200"/>
+    <img src="https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/54a700d0-cb45-43d0-918e-027eb9ba47ed" alt="Pytorch Example 9" width="200"/>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+    <img src="https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/8eb7e3f5-f0b7-4556-a10d-ff439e7f9fd7" alt="Tensorflow Example 1" width="200"/>
+    <img src="https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/61a5e2ae-7591-4587-8ac4-741982bff994" alt="Tensorflow Example 2" width="200"/>
+</div>
+
 
 
 ## Features
