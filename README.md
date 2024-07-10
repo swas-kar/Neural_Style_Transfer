@@ -56,6 +56,21 @@ A Content Image –an image to which we want to transfer style to
 A Style Image – the style we want to transfer to the content image
 An Input Image (generated) – the final blend of content and style image
 
+## Content/Style tradeoff
+
+Changing style weight gives you less or more style on the final image, assuming you keep the content weight constant.  
+We did increments of 10 here for style weight (1e1, 1e2, 1e3, 1e4), while keeping content weight at constant 1e5, and we used random image as initialization image.
+
+![Content-Style tradeoff](https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/78aa49bf-d4b4-417c-877d-0cadd25773b4)
+
+
+## Impact of total variation (tv) loss
+
+The total variation loss i.e. its corresponding weight controls the smoothness of the image.  
+We also did increments of 10 here (1e1, 1e4, 1e5, 1e6) and we used content image as initialization image.
+![mpact of total variation (tv) loss](https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/82d3af90-3cce-4b9b-8333-303846efa779)
+
+
 ### Examples
 Here are a few examples of the style transfer in action:
 <div style="display: flex; flex-wrap: wrap;">
