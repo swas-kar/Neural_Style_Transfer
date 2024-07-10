@@ -85,10 +85,6 @@ Here are a few examples of the style transfer in action:
     <img src="/data/examples/TajMahal.jpeg" alt="Example7" width="400" height="400" style="margin: 5px;"/>
 </div>
 
-<div style="display: flex; flex-wrap: wrap;">
-    <img src="/data/examples/Bridge.jpeg" alt="Example6" width="400" height="400" style="margin: 5px;"/>
-    <img src="/data/examples/TajMahal.jpeg" alt="Example7" width="400" height="400" style="margin: 5px;"/>
-</div>
 
  ![image](https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/1ef0cb80-f27e-4171-8df5-4e7fd0de96ee)
 
