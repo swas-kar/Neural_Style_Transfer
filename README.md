@@ -32,9 +32,8 @@ We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](h
 
 ## Important :
 1. The notebook demonstrates the PyTorch version utilizing the CUDA GPU available on Google Colab for executing the neural style transfer.
-2. However, the app version runs on TensorFlow as the loading time without GPU support was not practical for user purposes, which required patience for up to 30 minutes of loading.
-3. For completeness and project fulfillment, we have also uploaded the PyTorch version of app.py in the branch called `pytorch`.
-4. We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) for understanding the underlying principles.
+2. The app version runs on  PyTorch version , which required patience for up to 10-15 minutes of loading.
+3. We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) for understanding the underlying principles.
 
 
 ### Examples
