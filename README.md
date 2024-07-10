@@ -31,23 +31,39 @@ We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](h
 - Easy to use command-line interface.
 
 ## Important :
-1. The notebook demonstrates the PyTorch version utilizing the CUDA GPU available on Google Colab for executing the neural style transfer.
-2. However, the app version runs on TensorFlow as the loading time without GPU support was not practical for user purposes, which required patience for up to 30 minutes of loading.
-3. For completeness and project fulfillment, we have also uploaded the PyTorch version of app.py in the branch called `pytorch`.
-4. We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) for understanding the underlying principles.
+1. The notebook demonstrates the PyTorch version utilizing the CUDA GPU available on Google Colab for executing the neural style transfer.\
+2. For completeness and project fulfillment, we have also uploaded the PyTorch version of app.py in the branch called `master`.
+3. We have referred to the paper [Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) for understanding the underlying principles.
 
+## What is the Neural Style Algorithm ?
+Neural Style Transfer is the technique of blending style from one image into another image keeping its content intact. The only change is the style configurations of the image to give an artistic touch to your image.
+
+The content image describes the layout or the sketch and Style being the painting or the colors. It is an application of Computer Vision related to image processing techniques and Deep Convolutional Neural Networks.
+
+![image](https://github.com/Sidhupaji-2004/Neural-Style-Transfer/assets/116648570/b45c449c-05ff-4f32-918d-6ac15c6461f8)
+
+## How does NST work ? 
+Now, let’s explore how NST works.
+
+The aim of Neural Style Transfer is to give the Deep Learning model the ability to differentiate between the style representations and content image.
+NST employs a pre-trained Convolutional Neural Network with added loss functions to transfer style from one image to another and synthesize a newly generated image with the features we want to add.
+Style transfer works by activating the neurons in a particular way, such that the output image and the content image should match particularly in the content, whereas the style image and the desired output image should match in texture, and capture the same style characteristics in the activation maps.
+
+These two objectives are combined in a single loss formula, where we can control how much we care about style reconstruction and content reconstruction.
+Here are the required inputs to the model for image style transfer:
+
+A Content Image –an image to which we want to transfer style to
+A Style Image – the style we want to transfer to the content image
+An Input Image (generated) – the final blend of content and style image
 
 ### Examples
 Here are a few examples of the style transfer in action:
-### TensorFlow Version
 <div style="display: flex; flex-wrap: wrap;">
     <img src="/data/examples/example1.jpeg" alt="Example1" width="400" height="400" style="margin: 5px;"/>
     <img src="/data/examples/example2.jpeg" alt="Example2" width="400" height="400" style="margin: 5px;"/>
     <img src="/data/examples/example4.jpeg" alt="Example3" width="400" height="400" style="margin: 5px;"/>
     <img src="/data/examples/example.jpeg" alt="Example4" width="400" height="400" style="margin: 5px;"/>
 </div>
-
-### PyTorch Version
 <img src="/data/examples/Robot.png" alt="Example5" width="900" height="500"/>
 <div style="display: flex; flex-wrap: wrap;">
     <img src="/data/examples/Bridge.jpeg" alt="Example6" width="400" height="400" style="margin: 5px;"/>
