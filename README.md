@@ -11,6 +11,7 @@
 - [Features](#features)
 - [Important](#important)
 - [Examples](#examples)
+- [Initialization](#initialization)
 - [Installation](#installation)
 - [Contributing](#contributing)
 - [License](#license)
@@ -61,6 +62,21 @@ Here are a few examples of the style transfer in action:
 - Adjustable style strength.
 - Supports multiple image formats.
 - Easy to use command-line interface.
+
+## Different kinds of initializations
+
+#### Initialization using Gaussian Noise
+<img src="/data/examples/Gaussian.jpeg"/>
+
+#### Initialization using White Noise
+<img src="/data/examples/WhiteNoise.jpeg"/>
+
+#### Initialization using Style image
+<img src="/data/examples/Style.jpeg"/>
+
+#### Initialization using Content image
+<img src="/data/examples/Content.jpeg"/>
+
 
 ## Installation
 
