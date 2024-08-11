@@ -1,3 +1,4 @@
+import tensorflow as tf
 import streamlit as st
 import os
 import torch
@@ -6,7 +7,7 @@ import torch.optim as optim
 from torchvision.models import vgg19, VGG19_Weights
 import torchvision.transforms as transforms
 from PIL import Image
-import copy
+import numpy as np  # Import numpy for Gaussian noise
 import time
 
 # For suppressing warnings
@@ -130,9 +131,13 @@ def get_input_optimizer(input_img):
     optimizer = optim.LBFGS([input_img.requires_grad_()])
     return optimizer
 
+def total_variation(y):
+    return torch.sum(torch.abs(y[:, :, :, :-1] - y[:, :, :, 1:])) + \
+           torch.sum(torch.abs(y[:, :, :-1, :] - y[:, :, 1:, :]))
+
 def run_style_transfer(cnn, normalization_mean, normalization_std,
-                       content_img, style_img, input_img, num_steps=500,  # Increased steps
-                       style_weight=1000000, content_weight=10):  # Adjusted weights
+                       content_img, style_img, input_img, num_steps=200,  # Increased steps
+                       style_weight=1000000, content_weight=1, tv_weight=0.00001):  # Adjusted weights
     model, style_losses, content_losses = get_style_model_and_losses(cnn,
         normalization_mean, normalization_std, style_img, content_img)
 
@@ -158,12 +163,13 @@ def run_style_transfer(cnn, normalization_mean, normalization_std,
 
             style_score *= style_weight
             content_score *= content_weight
+            tv_score = total_variation(input_img) * tv_weight
 
-            loss = style_score + content_score
+            loss = style_score + content_score + tv_score
             loss.backward()
 
             run[0] += 1
-            return style_score + content_score
+            return style_score + content_score + tv_score
 
         optimizer.step(closure)
 
@@ -208,16 +214,32 @@ with style_image:
             style_image_file = image_loader(style_path)
             st.image(imshow(style_image_file), caption='Style Image', use_column_width=True)
 
+# New section for choosing initialization method
+init_method = st.radio('Initialization Method:', ('Content Image', 'White Noise', 'Style Image', 'Gaussian Noise'))
+
 predict = st.button('Start Neural Style Transfer...')
 
 if predict:
     with st.spinner('Processing...'):
-        input_img = content_image_file.clone()
+        if init_method == 'Content Image':
+            input_img = content_image_file.clone()
+        elif init_method == 'White Noise':
+            input_img = torch.randn(content_image_file.data.size(), device=device)
+        elif init_method == 'Style Image':
+            input_img = style_image_file.clone()
+        elif init_method == 'Gaussian Noise':
+            gaussian_noise_img = np.random.normal(loc=0, scale=90., size=content_image_file.cpu().clone().numpy().shape).astype(np.float32)
+            input_img = torch.from_numpy(gaussian_noise_img).float().to(device)
+
         output = run_style_transfer(cnn, torch.tensor([0.485, 0.456, 0.406]).to(device),
                                     torch.tensor([0.229, 0.224, 0.225]).to(device),
                                     content_image_file, style_image_file, input_img)
         final_image = imshow(output)
         st.image(final_image, caption='Output Image', width=400)
 
+        if st.button('Download Image'):
+            img_pil = final_image
+            img_pil.save('output_image.jpg')
+            st.success("Image Downloaded Successfully!")
 st.write('Made by Siddharth and Swastika with \u2764\ufe0f.')
 st.write('Happy Coding !')
